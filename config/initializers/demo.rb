@@ -20,10 +20,17 @@ class DemoApp < Espial::Engine
         tags ['users']
         controller 'users#show'
         description 'Get a list of users'
+
+        parameter do
+          name 'limit'
+          location 'query'
+          required false
+          type 'integer'
+        end
       end
     end
 
-    path '/user/:id' do
+    path '/user/{id}' do
       get do
         tags ['user']
         controller 'user#show'
@@ -34,13 +41,6 @@ class DemoApp < Espial::Engine
           location 'path'
           required true
           type 'string'
-        end
-
-        parameter do
-          name 'limit'
-          location 'query'
-          required false
-          type 'integer'
         end
       end
       post do
