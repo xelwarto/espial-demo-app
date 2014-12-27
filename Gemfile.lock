@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/xelwarto/espial.git
-  revision: 125cd883d5105e2457ce2bb300bcc50e6b3c20cd
+  revision: 97d1f1d551e3ef3fb0447454eddaf02b8154aea3
   specs:
     espial (0.1.0)
       rails (~> 4)
